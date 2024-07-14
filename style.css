@@ -8,6 +8,7 @@ body {
     background-size: cover;
     color: #ffffff;
     margin: 0;
+    padding: 20px; /* Add padding for better spacing on smaller screens */
 }
 
 @keyframes fadeIn {
@@ -174,4 +175,49 @@ h2 {
 
 #namaInput, #cekButton {
     width: 80%;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #namaInput, #cekButton {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #cekButton, #ulangButton {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    #namaInput, #cekButton {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #cekButton, #ulangButton {
+        padding: 8px 16px;
+    }
 }
