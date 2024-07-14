@@ -180,8 +180,32 @@ h2 {
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
     .container {
-        padding: 20px;
+        padding: 30px;
         max-width: 90%;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    #namaInput, #cekButton {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #cekButton, #ulangButton {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+        max-width: 100%;
     }
 
     h2 {
@@ -196,28 +220,9 @@ h2 {
     #cekButton, #ulangButton {
         padding: 10px 20px;
     }
-}
 
-@media (max-width: 480px) {
-    body {
+    #namaInput {
         padding: 10px;
-    }
-
-    .container {
-        padding: 15px;
-        max-width: 100%;
-    }
-
-    h2 {
-        font-size: 18px;
-    }
-
-    #namaInput, #cekButton {
-        width: 100%;
-        font-size: 14px;
-    }
-
-    #cekButton, #ulangButton {
-        padding: 8px 16px;
+        margin: 10px 0;
     }
 }
